@@ -9,7 +9,7 @@ module Petfinder
         connect_to_api = connection
         response = connect_to_api.get('')
         puts "Failed to connect to the API. Response status: #{response.status}." if response.status != 200
-        JSON.parse(response.body || {})
+        JSON.parse(response.body || {})['animals']
       end
 
       def write_to_db
