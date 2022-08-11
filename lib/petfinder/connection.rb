@@ -1,6 +1,5 @@
 # frozen_string_literal: true
 
-
 module Petfinder
   module Connection
     def access_token
@@ -13,7 +12,7 @@ module Petfinder
         req.body = {
           client_id: client_id,
           client_secret: client_secret,
-          grant_type: 'client_credentials',
+          grant_type: 'client_credentials'
         }.to_json
       end
       response_body = JSON.parse(response&.body || {})

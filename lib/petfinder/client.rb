@@ -1,11 +1,9 @@
 # frozen_string_literal: true
 
-require './lib/petfinder/constants'
-require './lib/petfinder/apis/pets'
-require './lib/petfinder/connection'
+require_relative 'connection'
+require_relative 'constants'
+require_relative 'apis/pets'
 require 'faraday'
-require 'byebug'
-
 
 module Petfinder
   class Client
