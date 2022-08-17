@@ -1,0 +1,75 @@
+{
+  "success": true,
+  "code": 200,
+  "error": "",
+  "animals": [
+    {
+      "id": 56611192,
+      "organization_id": "UT206",
+      "url": "https://www.petfinder.com/dog/reba-mcentire-56611192/ut/moab/underdog-animal-rescue-and-rehab-moab-ut206/?referrer_id=fd4de68c-79cd-433e-8d23-d72a37d02738",
+      "type": "Dog",
+      "species": "Dog",
+      "breeds": {
+        "primary": "Mixed Breed",
+        "secondary": null,
+        "mixed": false,
+        "unknown": false
+      },
+      "colors": {
+        "primary": "Yellow / Tan / Blond / Fawn",
+        "secondary": null,
+        "tertiary": null
+      },
+      "age": "Young",
+      "gender": "Female",
+      "size": "Medium",
+      "coat": null,
+      "attributes": {
+        "spayed_neutered": true,
+        "house_trained": false,
+        "declawed": null,
+        "special_needs": false,
+        "shots_current": true
+      },
+      "environment": {
+        "children": null,
+        "dogs": null,
+        "cats": null
+      },
+      "tags": [],
+      "name": "Reba McEntire",
+      "description": null,
+      "organization_animal_id": "UDR-A-1150",
+      "photos": [],
+      "primary_photo_cropped": null,
+      "videos": [],
+      "status": "adoptable",
+      "status_changed_at": "2022-08-09T08:40:26+0000",
+      "published_at": "2022-08-09T08:40:26+0000",
+      "distance": null,
+      "contact": {
+        "email": "underdogrescue17@gmail.com",
+        "phone": "(435) 260-8033",
+        "address": {
+          "address1": "4561 Sunny Acres Lane",
+          "address2": null,
+          "city": "Moab",
+          "state": "UT",
+          "postcode": "84532",
+          "country": "US"
+        }
+      },
+      "_links": {
+        "self": {
+          "href": "/v2/animals/56611192"
+        },
+        "type": {
+          "href": "/v2/types/dog"
+        },
+        "organization": {
+          "href": "/v2/organizations/ut206"
+        }
+      }
+    }
+  ]
+}

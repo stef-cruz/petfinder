@@ -4,9 +4,7 @@ module Petfinder
   module Connection
     def access_token
       conn = Faraday.new(url: 'https://api.petfinder.com/v2/oauth2/token',
-                         headers: { 'Content-Type' => 'application/json' }) do |faraday|
-        faraday.response(:logger, ::Logger.new($stdout), bodies: true)
-      end
+                         headers: { 'Content-Type' => 'application/json' })
 
       response = conn.post('') do |req|
         req.body = {
@@ -23,9 +21,7 @@ module Petfinder
       jwt_token = access_token
       Faraday.new(url: ::Petfinder::Constants::API_ENDPOINT.to_s,
                   headers: { 'Content-Type' => 'application/json',
-                             'Authorization' => "Bearer #{jwt_token}" }) do |faraday|
-        faraday.response(:logger, ::Logger.new($stdout), bodies: true)
-      end
+                             'Authorization' => "Bearer #{jwt_token}" })
     end
   end
 end
